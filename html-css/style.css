@@ -1,80 +1,14 @@
-* {
-    padding: 0;
-    box-sizing: border-box;
+div {
+    background-color: rgb(128, 128, 128, 0.9);
+    display: inline-block;
 }
 
-body {
-    background-color: #112240;
-    color:  #ccd6f6;
-    font-family: 'Rubik', sans-serif;
+span {
+    background-color: rgb(128, 128, 128, 0.6);
+    display: inline-block;
 }
 
-.header {
-    color: #e6f1ff;
-   font-weight: bolder; 
-   font-size: 2.5rem;
-   display: flex;
-   justify-content: center;
-   margin: 1rem 0;
-}
-
-h3 {
-    font-size: 1.5rem;
-    font-weight: bolder;
-    margin: 2rem 3rem 1rem 3rem;
-    color: #64ffda;
-}
-
-.text {
-    margin: 0 3rem;
-    text-align: justify;
-    line-height: 1.5;
-}
-
-ul{
-    list-style: none;
-    margin-left: 5rem;
-}
-
-.project-img {
-    width: 250px;
-    margin: 0.9rem 3rem ;
-}
-
-.project-img:hover {
-   background-color: red;
-}
-
-input, textarea {
-    border: 0.08rem solid gainsboro;
-    border-radius: 5px;
-    padding: 0.5rem;
-    line-height: inherit;
-}
-
-input:focus, textarea:focus{
-    border: 0.08rem solid #64ffda;
-    outline: none;
-    box-shadow: 0 0 2px 1px #64ffda;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    margin: 2rem 0 1rem 0;
-    color: #64ffda;
-}
-
-.form__button {
-    border: 1px solid #64ffda;
-    background-color: transparent;
-    color: #e6f1ff;
-    padding: 0.2rem 0.5rem;
-    border-radius: 0.2rem;
+button {
+    background-color: rgb(128, 128, 128, 0.3);
     
-}
-
-.form__button:hover {
-    cursor: pointer;
-    background-color: hsla(166, 100%, 70%, 0.30);
 }
