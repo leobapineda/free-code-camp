@@ -1,14 +1,14 @@
+.img-shawn {
+    max-width: 150px;
+    float: left;
+}
+
+.img-emma {
+    max-width: 100px;
+    float: right;
+    margin: 0 1rem 0 0;
+}
+
 div {
-    background-color: rgb(128, 128, 128, 0.9);
-    display: inline-block;
-}
-
-span {
-    background-color: rgb(128, 128, 128, 0.6);
-    display: inline-block;
-}
-
-button {
-    background-color: rgb(128, 128, 128, 0.3);
-    
+    clear: both;
 }
