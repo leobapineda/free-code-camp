@@ -1,34 +1,93 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* Navy */
+    /* background-color: #0a192f;  */
+    /* Light Navy */
+    background-color:  #112240;
+    /* Lightest Navy */
+    /* background-color: #233554; */
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    color: #e6f1ff;
 }
 
 .container {
-    height: 500px;
-    display: inline-flex;
+    height: 80vh;
+    max-width: 80%;
+    width: 600px;
+    /* overflow: auto; */
+    border-radius: 1em;
     display: flex;
-    background-color: rgba(255, 0, 0, 0.3);
-    border: 1px solid;
+    flex-direction: column;
+    border: 1px solid #64ffda;
 }
 
-.item {
-    margin: .5rem;
-    border: 1px solid;
-    width: 150px;
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #64ffda;
+    
 }
 
-.item-1 {
-    background-color: hsla(0, 0%, 50%, 0.9);
-    min-height: 3rem;
-    flex-grow: 2;
+.header__tittle {
+    font-size: 2rem;
+    color: #8892b0;
 }
 
-.item-2 {
-    background-color: hsla(0, 0%, 50%, 0.6);
-    min-height: 6rem;
-    flex-grow: 1;
+.header__button {
+    color: #e6f1ff;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem;
 }
 
-.item-3 {
-    background-color: hsla(0, 0%, 50%, 0.3);
-    min-height: 9rem;
+.header__button:hover,
+.header__button:focus {
+    padding: 0.5em;
+    border-radius: 0.2em;
+    background-color: #2a6658;
+}
+
+.text {
+    padding: 1em;
+    text-align: justify;
+    /* flex-grow: 1; */
+    overflow: auto;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid #64ffda;
+}
+
+.footer .btn {
+    padding: 0.5em 1em;
+    margin: 0.5em 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid #64ffda ;
+    background:none;
+    color: #e6f1ff;
+    cursor: pointer;
+}
+
+.footer .btn:hover, 
+.footer .btn:focus{
+    background-color: #274e44;
+
+}
+
+.footer .btn-danger {
+    margin-right: 2rem;
 }
