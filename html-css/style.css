@@ -1,79 +1,75 @@
-/* 25 - Grid Home Page Project  */
+/* 25 - Grid Home Page Project 2 */
 
-body {
-    background-color:  #112240;
-    color:  #a8b2d1;
-    border: 1px solid  #64ffda;
-    font-family:monospace;
-    font-size: 1rem;
-    border: none;
-}
-
-.grid-container {
-    height: 100vh;
+.grid-container { 
     margin: 0;
+    padding: 0;
+    background-color:   #112240;
+    color: #64ffda;
+    color:   #a8b2d1;
+    height: 100vh;
+    font-family: monospace;
     display: grid;
-    grid-template-columns: 1fr minmax(100px, 0.5fr);
+    grid-template-columns: 1fr minmax(50px, 0.5fr);
     grid-template-rows: auto auto 1fr auto;
     grid-template-areas: 
     'header header'
-    'nav sidebar'
-    'content sidebar'
+    'navbar sidebar'
+    'content1 sidebar'
     'footer footer'
     ;
 }
 
 .header {
-    color:  #e6f1ff;
     grid-area: header;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
-    padding: 1em;
-}
-
-.nav-list {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    padding: 0.5em;
-
-}
-
-.nav-list li {
-    padding: 0.5em;
+    padding:0.5rem 0 1rem;
+    border-bottom: 1px solid #64ffda;
 }
 
 .navbar {
-    grid-area: nav;
-    border-top: 1px solid  #64ffda;
+    grid-area: navbar;
 }
 
+.navbar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
 
+.navbar li{
+    list-style: none;
+    text-decoration: none;
+    padding: 0 1em;
+    font-size: 1rem;
+}
 
-.sidebar {
-    grid-area: sidebar;
-    border-top: 1px solid  #64ffda;
-    padding: 0.5em;
-    
+.navbar a {
+    color:   #a8b2d1;
+    text-decoration: none;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+    color:   #64ffda;
 }
 
 .content {
-    
-    grid-area: content;
-    margin: 1rem;
-
+    grid-area: content1;
+    padding: 0.5rem;
 }
 
-.content h2 {
-    margin: 0;
+.sidebar {
+    grid-area: sidebar;
+    padding: 0.5rem;
 }
 
 .footer {
     grid-area: footer;
+    border-top: 1px solid #64ffda;
     text-align: center;
-    color:  #e6f1ff;
-    margin-bottom: 0.5em;
+    padding: 0.5rem 0;
+    font-size: 1rem;
 }
- 
