@@ -1,20 +1,79 @@
-* {
-    box-sizing: border-box;
+/* 25 - Grid Home Page Project  */
+
+body {
+    background-color:  #112240;
+    color:  #a8b2d1;
+    border: 1px solid  #64ffda;
+    font-family:monospace;
+    font-size: 1rem;
+    border: none;
 }
 
-.container {
+.grid-container {
     height: 100vh;
+    margin: 0;
     display: grid;
-   grid-template-columns: repeat(3, 100px);
-   grid-template-rows: minmax(50px, auto) 100px;
-   gap: 10px;
-   justify-content: center;
-
-   align-content: center; 
+    grid-template-columns: 1fr minmax(100px, 0.5fr);
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: 
+    'header header'
+    'nav sidebar'
+    'content sidebar'
+    'footer footer'
+    ;
 }
 
-.item {
-    background-color: #64ffc1;
-    border: 1px solid #333;
+.header {
+    color:  #e6f1ff;
+    grid-area: header;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1em;
 }
 
+.nav-list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding: 0.5em;
+
+}
+
+.nav-list li {
+    padding: 0.5em;
+}
+
+.navbar {
+    grid-area: nav;
+    border-top: 1px solid  #64ffda;
+}
+
+
+
+.sidebar {
+    grid-area: sidebar;
+    border-top: 1px solid  #64ffda;
+    padding: 0.5em;
+    
+}
+
+.content {
+    
+    grid-area: content;
+    margin: 1rem;
+
+}
+
+.content h2 {
+    margin: 0;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    color:  #e6f1ff;
+    margin-bottom: 0.5em;
+}
+ 
