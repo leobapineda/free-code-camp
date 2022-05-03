@@ -1,75 +1,109 @@
-/* 25 - Grid Home Page Project 2 */
+/* 26/27 - Image Gallery Project */
 
-.grid-container { 
-    margin: 0;
-    padding: 0;
-    background-color:   #112240;
-    color: #64ffda;
-    color:   #a8b2d1;
-    height: 100vh;
-    font-family: monospace;
-    display: grid;
-    grid-template-columns: 1fr minmax(50px, 0.5fr);
-    grid-template-rows: auto auto 1fr auto;
-    grid-template-areas: 
-    'header header'
-    'navbar sidebar'
-    'content1 sidebar'
-    'footer footer'
-    ;
+.grid-container {
+   background-color: #233553;
+   display: grid;
+   /* 9 */
+   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr
+   ));
+   /* 4 */
+   grid-template-rows: repeat(4, minmax(100px, 100px));
+   grid-template-areas: 
+   'm1 m2 m3 m4 m4 m5 m6 m7 m8'
+   'm1 m2 m11 m11 m12 m13 m15 m15 m16'
+   'm9 m10 m11 m11 m14 m14 m15 m15 m17'
+   'm18 m19 m20 . . . . . .'
+   ;
 }
 
-.header {
-    grid-area: header;
-    font-size: 2rem;
-    text-align: center;
-    padding:0.5rem 0 1rem;
-    border-bottom: 1px solid #64ffda;
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.navbar {
-    grid-area: navbar;
+.img {
+    background-color: #64ffda;
+    border: 1px solid #233554;
 }
 
-.navbar ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    padding: 0.5rem 0;
+.img-1 {
+    grid-area: m1;
 }
 
-.navbar li{
-    list-style: none;
-    text-decoration: none;
-    padding: 0 1em;
-    font-size: 1rem;
+.img-2 {
+    grid-area: m2;
 }
 
-.navbar a {
-    color:   #a8b2d1;
-    text-decoration: none;
+.img-3 {
+    grid-area: m3;
 }
 
-.navbar a:hover,
-.navbar a:focus {
-    color:   #64ffda;
+.img-4 {
+    grid-area: m4;
+} 
+
+.img-5 {
+    grid-area: m5;
 }
 
-.content {
-    grid-area: content1;
-    padding: 0.5rem;
+.img-6 {
+    grid-area: m6;
 }
 
-.sidebar {
-    grid-area: sidebar;
-    padding: 0.5rem;
+.img-7 {
+    grid-area: m7;
 }
 
-.footer {
-    grid-area: footer;
-    border-top: 1px solid #64ffda;
-    text-align: center;
-    padding: 0.5rem 0;
-    font-size: 1rem;
+.img-8 {
+    grid-area: m8;
 }
+
+.img-9 {
+    grid-area: m9;
+}
+
+.img-10 {
+    grid-area: m10;
+}
+
+.img-11 {
+    grid-area: m11;
+}
+
+.img-12 {
+    grid-area:m12 ;
+}
+
+.img-13 {
+    grid-area:m13 ;
+}
+
+.img-14 {
+    grid-area:m14 ;
+}
+
+.img-15 {
+    grid-area:m15 ;
+}
+
+.img-16 {
+    grid-area:m16 ;
+}
+
+.img-17 {
+    grid-area:m17 ;
+}
+
+.img-18 {
+    grid-area:m18 ;
+}
+
+.img-19 {
+    grid-area:m19 ;
+}
+
+.img-20 {
+    grid-area:m20 ;
+}
+
