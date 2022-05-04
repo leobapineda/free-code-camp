@@ -26,6 +26,12 @@ a {
     'header header'
     'menu contenido'
     ;
+
+    transition: all 0.3s ease;
+}
+
+.contenedor.active {
+    grid-template-columns: 300px auto;
 }
 
 .header {
@@ -42,5 +48,4 @@ a {
 .main {
     background-color: red;
     grid-area: contenido;
-
 }
