@@ -1,0 +1,46 @@
+/* YouTube Landing Page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 90px auto;
+    grid-template-rows: 60px auto;
+    grid-template-areas: 
+    'header header'
+    'menu contenido'
+    ;
+}
+
+.header {
+    background-color: white;
+    grid-area: header;
+
+}
+
+.menu-lateral {
+    background-color: gray;
+    grid-area: menu;
+}
+
+.main {
+    background-color: red;
+    grid-area: contenido;
+
+}
