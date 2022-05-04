@@ -1,37 +1,126 @@
-/* 28 - Position */
+/* YouTube Landing Page */
 
-body {
-    height: 200vh;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.parent {
-    background-color: rgb(118, 118, 255);
-    padding: 0.5em;
-    position: relative;
-    margin-top: 5em;
+.project-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
-.item {
-    border:1px solid #333;
-    padding: 0.5em;
-    height: 50px;
+/* header */
+.header {
+    background-color: #212121;
+    position: sticky;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__section-left {
+    display: flex;
+    align-items: center;
+    color: white;
 
 }
 
-.item-1 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: yellow;
+.header__section-left .material-icons  {
+    padding: 1rem 0.8rem;
+}
+
+.header__section-left .youtube-icon {
+    color: red;
+    font-size: 2rem;
+}
+
+/* header center */
+.header__section-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.header__navbar {
+    padding: 0 0 0 5rem;
+    flex-grow: 1;
+}
+
+.header__section-center input {
+    border: 1px solid #777;
+    padding: 0.5rem;
+    background-color: transparent;
+    color: white;
     width: 100%;
 }
 
-
-.item-2 {
-    background-color: red;
+.header__section-center input:focus {
+    outline: none;
+    border: 1px solid #065fd4;
 }
 
-.item-3 {
-    background-color: white;
+.header__search-button {
+    background-color: red;
+    height: 100%;
+}
+
+.header__section-center button {
+    border: none;
+    background-color: #606060;
+    min-height: 100%;
+    width: 4rem;
+    height: 2rem;
+}
+
+/* por que no crece */
+    /*  */
+
+/* header right */
+.header__section-right {
+    display: flex;
+    align-items: center;
+}
+
+.header__section-right .material-icons {
+    padding: 1rem;
+}
+
+/* header */
+/* videos */
+
+.main-container {
+    display: flex;
+    height: 100vh;
+    border: 1px solid;
+}
+
+.main-aside {
+    background-color: #ff4d0050;
+    width: 19vw;
     
+}
+
+.main-section {
+    width: 100%;
+}
+
+.main-header {
+    background-color: #00ff2650;
+    height: 4rem;
+}
+
+.main-videos {
+    background-color: #ff00ff50;
+}
+   
+
+
+
+.material-icons {
+    color: white;
 }
