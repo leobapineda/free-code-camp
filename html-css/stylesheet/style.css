@@ -1,4 +1,5 @@
 /* YouTube Landing Page */
+/* youtube landing page v2: main grid structure */
 
 * {
     margin: 0;
@@ -34,16 +35,116 @@ a {
     grid-template-columns: 300px auto;
 }
 
+/* ------HEADER------ */
 .header {
-    background-color: white;
     grid-area: header;
-
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 20px;
+    grid-template-areas: 
+    'logo busqueda iconos'
+    ;
 }
 
+/* ------HEADER LOGO------ */
+
+.header .contenedor-logo {
+    grid-area: logo;
+    display: flex;  
+    align-items: center;
+}
+
+.header .contenedor-logo .boton-menu {
+    border: none;
+    padding: 10px;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.header .contenedor-logo .boton-menu:hover {
+    background-color: #e7e7e7;
+    transition: all 0.2s ease-in-out;
+}
+
+.header .contenedor-logo .logo .fa-brands {
+    color: red;
+}
+
+.header .contenedor-logo .logo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+}
+
+/* ------HEADER BARRA DE BUSQUEDA------ */
+.header .barra-busqueda {
+    grid-area: busqueda;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .barra-busqueda input {
+    min-width: 60%;
+    padding: 0px 15px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+}
+
+.header .barra-busqueda button {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-left: none;
+    height: 35px;
+    padding: 0 1rem;
+}
+
+.header .barra-busqueda button:hover {
+    background-color: #ededed;
+    cursor: pointer;
+}
+
+/* ------HEADER BOTONES------ */
+.header .botones-header {
+    grid-area: iconos;
+    display: flex;
+    align-items: center;
+}
+
+.header .botones-header button{
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+    margin: 1rem;
+    border-radius: 50%;
+    padding: 7px 12px;
+}
+
+.header .botones-header button:hover {
+    background-color: #ededed;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+/* ------Menu Lateral------ */
 .menu-lateral {
     background-color: gray;
     grid-area: menu;
 }
+
 
 .main {
     background-color: red;
