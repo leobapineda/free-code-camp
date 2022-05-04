@@ -180,7 +180,31 @@ a {
     margin: 20px 0;
 }
 /* ------ MAIN ------ */
+
 .main {
-    background-color: red;
-    grid-area: contenido;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
 }
+
+.main .main__tittle {
+    margin-bottom: 20px;
+}
+
+.main .main__grid-video {
+    display: grid;
+    gap: 40px 20px;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.main .main__grid-video .main__video {
+    width: 100%;
+    display: block;
+}
+
+main .main__grid-video .main__video img {
+    width: 100%;
+}
+
