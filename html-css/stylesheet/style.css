@@ -71,7 +71,7 @@ a {
 
 .header .contenedor-logo .boton-menu:hover {
     background-color: #e7e7e7;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 .header .contenedor-logo .logo .fa-brands {
@@ -135,17 +135,49 @@ a {
 
 .header .botones-header button:hover {
     background-color: #ededed;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
     cursor: pointer;
 }
 
 /* ------Menu Lateral------ */
 .menu-lateral {
-    background-color: gray;
+    background-color: #fff;
     grid-area: menu;
+    display: flex;
+    flex-direction: column;
 }
 
+/* menu-lateral section-1 */
+.menu-lateral a {
+    display: block;
+    padding: 15px 35px;
+    color: black;
+}
 
+.menu-lateral a:hover {
+    background-color: #e5e5e5;
+}
+
+.menu-lateral a.active {
+    background-color: #e5e5e5;
+}
+
+.menu-lateral a i {
+    color: #606060;
+    margin-right: 32px;
+    width: 20px;
+    text-align: center;
+}
+
+.menu-lateral a.active i {
+    color: red;
+}
+
+.menu-lateral hr {
+    border: 1px solid #dfdfdf;
+    margin: 20px 0;
+}
+/* ------ MAIN ------ */
 .main {
     background-color: red;
     grid-area: contenido;
