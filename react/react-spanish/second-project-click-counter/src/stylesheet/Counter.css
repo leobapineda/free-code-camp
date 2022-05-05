@@ -1,5 +1,13 @@
 .counter {
+    box-sizing: border-box;
     min-width: 200px;
     height: 200px;
-    background-color: white;
+    background-color: #0a0a23;
+    border: 1px solid #64ffda;
+    color: #d0d0d5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    user-select: none;
 }

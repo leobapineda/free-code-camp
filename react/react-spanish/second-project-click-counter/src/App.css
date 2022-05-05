@@ -6,4 +6,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.App .app-logo {
+    margin: 20px auto;
+}
+.App img {
+    width: 200px;
 }

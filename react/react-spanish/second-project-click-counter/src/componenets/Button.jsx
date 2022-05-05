@@ -1,3 +1,4 @@
+import '../stylesheet/Button.css'
 
 function Button({esCickButton, counterChange, text}) {
     return(

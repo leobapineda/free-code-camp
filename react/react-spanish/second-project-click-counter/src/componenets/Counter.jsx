@@ -3,7 +3,9 @@ import '../stylesheet/Counter.css'
 
 function Counter() {
     return(
-        <div className="counter" >0</div>
+        <div className="counter" >
+            <div>0</div>
+        </div>
     )
 }
 

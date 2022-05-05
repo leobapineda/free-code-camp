@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    border: 1px solid #64ffda;
+    background-color: transparent;
+    color: #d0d0d5;
+    min-width: 200px;
+    display: block;
+    margin: 20px auto;
+    padding: 0.1rem;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    background-color: #64ffdb10;
+    cursor: pointer;
+}
