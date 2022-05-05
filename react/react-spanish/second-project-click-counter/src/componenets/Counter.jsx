@@ -1,10 +1,10 @@
 import React from "react";
 import '../stylesheet/Counter.css'
 
-function Counter() {
+function Counter({count}) {
     return(
         <div className="counter" >
-            <div>0</div>
+            <div>{count}</div>
         </div>
     )
 }
