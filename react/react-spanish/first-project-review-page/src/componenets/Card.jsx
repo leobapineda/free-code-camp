@@ -1,11 +1,12 @@
 import React from "react";
 import '../styles/Card.css';
+// import imgage from '../img/freecodecamp-emma.png'
 
 function Card(props) {
   return (
     <div className="card__container">
       <div className="card__img">
-        <img src={require("../img/freecodecamp-shawn.png")} alt="" />
+        <img src={require(`../img/freecodecamp-${props.img}.png`)} alt="" />
       </div>
       <div className="card__info">
         <div className="card__name-container">
