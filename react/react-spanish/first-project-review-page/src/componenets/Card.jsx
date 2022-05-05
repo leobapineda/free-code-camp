@@ -9,18 +9,15 @@ function Card(props) {
       </div>
       <div className="card__info">
         <div className="card__name-container">
-          <span className="card__name"><strong>Shawn Wang</strong> </span> in
-          <span className="card__city"> Singapore</span>
+          <span className="card__name"><strong>{props.name}</strong> </span> in
+          <span className="card__city"> {props.city}</span>
         </div>
         <div className="card__company-container">
-          <span className="card__job">Software Engineer</span> at
-          <span className="card__company">  <strong>Amazon</strong></span>
+          <span className="card__job">{props.job}</span> at
+          <span className="card__company">  <strong>{props.company}</strong></span>
         </div>
         <div className="card__text">
-          "It's scary to change careers. I only gained confidence that I could
-          code by working through the hundreds of hours of free lessons on
-          freeCodeCamp. Within a year I had a six-figure job as a Software
-          Engineer. freeCodeCamp changed my life."
+        {props.text}
         </div>
       </div>
     </div>
