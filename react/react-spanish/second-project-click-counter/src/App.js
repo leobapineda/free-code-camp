@@ -16,14 +16,14 @@ function App() {
   };
 
   const clearCount = () => {
-    if (count == 0) return;
+    if (count === 0) return;
     setCount(0);
   };
 
   return (
     <div className="App">
       <header className="app-logo">
-        <img src={freecodecampLogo} />
+        <img src={freecodecampLogo} alt='freecodecamp logo'/>
       </header>
       <main className="app-main">
         <Counter count={count} />
