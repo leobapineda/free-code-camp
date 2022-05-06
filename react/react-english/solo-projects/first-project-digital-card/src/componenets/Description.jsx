@@ -1,4 +1,6 @@
 import React from "react";
+// stylesheet
+import '../stylesheet/Description.css'
 
 export default function Description() {
   return (

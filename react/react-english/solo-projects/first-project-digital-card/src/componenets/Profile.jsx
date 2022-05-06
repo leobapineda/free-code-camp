@@ -1,5 +1,7 @@
 import React from "react";
 import profilePicture from "../images/perfil.jpg";
+// stylesheet
+import '../stylesheet/Profile.css'
 
 export default function Perfil() {
   return (

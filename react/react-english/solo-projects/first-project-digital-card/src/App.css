@@ -1,0 +1,12 @@
+body {
+    background-color: rgba(255, 0, 0, 0.566);
+    display: flex;
+    justify-content: center;
+}
+
+.app-container {
+    background-color: rgb(0, 0, 255);
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+}
