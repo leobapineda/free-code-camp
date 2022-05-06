@@ -1,0 +1,9 @@
+.wallpaper-container {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.wallpaper-img {
+    width: 500px;
+}
+

@@ -1,17 +1,16 @@
 import React from "react";
 import "./App.css";
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import Wallpaper from "./components/wallpaper";
 
-function Page() {
+function App() {
   return (
     <div className="main-container">
-      <Header />
-      <Main />
-      <Footer />
+        <Navbar />
+        <Wallpaper />
     </div>
   );
 }
 
-export default Page;
+export default App;
+// second project part2
