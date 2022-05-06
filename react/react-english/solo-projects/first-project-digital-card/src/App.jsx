@@ -11,7 +11,7 @@ export default function App() {
   return (
     <div className="app-container">
       <Profile />
-      <div className="app__button-container" >
+      <div className="app__button-container">
         <Button />
         <Button />
       </div>
