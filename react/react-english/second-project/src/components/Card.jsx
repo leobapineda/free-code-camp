@@ -15,7 +15,7 @@ export default function Card() {
         <span className="card__card__rating--gray"> (6) - USA</span>
         <div className="card__text">Life lesson with Katie Zaferes</div>
         <div className="card__price">
-        <strong>From $136</strong> / person
+          <strong>From $136</strong> / person
         </div>
       </div>
     </div>

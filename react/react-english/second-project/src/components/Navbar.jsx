@@ -7,7 +7,7 @@ import '../stylesheet/Navbar.css'
 export default function Navbar() {
     return(
         <div className="navbar-container" >
-            <img src={airbnbLogo} />
+            <img src={airbnbLogo} alt = 'bnb logo'/>
         </div>
     )
-}<h1>LOL</h1>
+}
