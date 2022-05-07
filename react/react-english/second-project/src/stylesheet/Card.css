@@ -5,8 +5,8 @@
 }
 
 .card__container .card__img {
-  min-width: 176px;
-  max-height: 235px;
+ width: 250px;
+ height: 350px;
 }
 
 img.card__star {
@@ -26,6 +26,3 @@ img.card__star {
   padding: 0.3rem 0;
 }
 
-/* .card__price {
-
-} */

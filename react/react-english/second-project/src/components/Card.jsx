@@ -14,6 +14,9 @@ export default function Card({
   location,
   openSpots
 }) {
+
+console.log(openSpots);
+
   return (
     <div className="card__container">
       <img

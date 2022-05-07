@@ -10,7 +10,8 @@ function App() {
     // console.log(element);
     return (
       <Card
-      title={element.title}
+      key={element.id}
+        title={element.title} 
         id={element.id}
         description={element.description}
         price={element.price}
