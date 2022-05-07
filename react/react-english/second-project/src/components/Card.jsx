@@ -12,24 +12,26 @@ export default function Card({
   rating,
   reviewCount,
   location,
-  openSpots
+  openSpots,
 }) {
+  let badgeText;
 
-console.log(openSpots);
-
+  if (openSpots === 0) {
+    badgeText = "SOLD OUT";
+  } else if (location === "Online") {
+    badgeText = "ONLINE";
+  }
   return (
     <div className="card__container">
-      {openSpots === 0 && <div className="card__badge" >SOLD OUT</div>}
-      <img
-        className="card__img"
-        src={coverImg}
-        alt={'coverImg'}
-      />
+      {(openSpots === 0 || location === "Online") && (
+        <div className="card__badge">{badgeText}</div>
+      )}
+      <img className="card__img" src={coverImg} alt={"coverImg"} />
       <div className="card__rating">
         <img
           className="card__star"
           src={require("../images/star.png")}
-          alt={'star img'}
+          alt={"star img"}
         />
         <span>{rating}</span>
         <span className="card__card__rating--gray">
