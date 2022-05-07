@@ -4,33 +4,35 @@ import React from "react";
 import "../stylesheet/Card.css";
 
 export default function Card({
-  profileImg,
-  starImg,
+  id,
+  title,
+  description,
+  price,
+  coverImg,
   rating,
   reviewCount,
-  country,
-  tittle,
-  price,
+  location,
+  openSpots
 }) {
   return (
     <div className="card__container">
       <img
         className="card__img"
-        src={require(`../images/bnb${profileImg}.png`)}
-        alt={profileImg}
+        src={coverImg}
+        alt={'coverImg'}
       />
       <div className="card__rating">
         <img
           className="card__star"
           src={require("../images/star.png")}
-          alt={starImg}
+          alt={'star img'}
         />
         <span>{rating}</span>
         <span className="card__card__rating--gray">
           {" "}
-          {`(${reviewCount})`} - {country}
+          {`(${reviewCount})`} - {location}
         </span>
-        <div className="card__text">{tittle}</div>
+        <div className="card__text">{title}</div>
         <div className="card__price">
           <strong>From {`$${price}`}</strong> / person
         </div>

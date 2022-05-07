@@ -3,20 +3,31 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Wallpaper from "./components/wallpaper";
 import Card from "./components/Card";
+import Data from "./components/Data";
 
 function App() {
+  let  dataElement  = Data.map((element) => {
+    // console.log(element);
+    return (
+      <Card
+      title={element.title}
+        id={element.id}
+        description={element.description}
+        price={element.price}
+        coverImg={element.coverImg}
+        rating = {element.stats.rating}
+        reviewCount = {element.stats.reviewCount}
+        location={element.location}
+        openSpots={element.openSpots}
+      />
+    );
+  });
+
   return (
     <div className="main-container">
       <Navbar />
       <Wallpaper />
-      <Card
-        profileImg={1}
-        rating={5.0}
-        reviewCount={6}
-        country={"USA"}
-        tittle={"Life lessons with Katie"}
-        price={123}
-      />
+      <div className="cards-container" >{dataElement}</div>
     </div>
   );
 }

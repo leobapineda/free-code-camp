@@ -5,7 +5,8 @@
 }
 
 .card__container .card__img {
-  min-width: 100%;
+  min-width: 176px;
+  max-height: 235px;
 }
 
 img.card__star {

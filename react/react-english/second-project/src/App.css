@@ -8,3 +8,8 @@ body {
     min-width: 500px;
     border: 1px solid #00000030;
 }
+
+.cards-container {
+    display: flex;
+    justify-content: space-evenly;
+}
