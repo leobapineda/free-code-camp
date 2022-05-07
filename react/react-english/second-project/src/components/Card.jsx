@@ -1,21 +1,38 @@
 import React from "react";
-import bnb1 from "../images/bnb1.png";
-import star from "../images/star.png";
 
 //stylesheet
 import "../stylesheet/Card.css";
 
-export default function Card() {
+export default function Card({
+  profileImg,
+  starImg,
+  rating,
+  reviewCount,
+  country,
+  tittle,
+  price,
+}) {
   return (
     <div className="card__container">
-      <img className="card__img" src={bnb1} alt="bnb 1" />
+      <img
+        className="card__img"
+        src={require(`../images/bnb${profileImg}.png`)}
+        alt={profileImg}
+      />
       <div className="card__rating">
-        <img className="card__star" src={star} alt="" />
-        <span>5.0</span>
-        <span className="card__card__rating--gray"> (6) - USA</span>
-        <div className="card__text">Life lesson with Katie Zaferes</div>
+        <img
+          className="card__star"
+          src={require(`../images/${starImg}.png`)}
+          alt={starImg}
+        />
+        <span>{rating}</span>
+        <span className="card__card__rating--gray">
+          {" "}
+          {`(${reviewCount})`} - {country}
+        </span>
+        <div className="card__text">{tittle}</div>
         <div className="card__price">
-          <strong>From $136</strong> / person
+          <strong>From {`$${price}`}</strong> / person
         </div>
       </div>
     </div>
