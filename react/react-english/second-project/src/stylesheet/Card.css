@@ -1,0 +1,30 @@
+.card__container {
+  width: fit-content;
+  margin: 1rem 1rem;
+  display: inline-block;
+}
+
+.card__container .card__img {
+  min-width: 100%;
+}
+
+img.card__star {
+    width: 15px;
+    margin: 0 0.2rem;
+}
+
+.card__rating {
+  padding: 0.3rem 0;
+}
+
+.card__card__rating--gray {
+    opacity: 0.7;
+}
+
+.card__text {
+  padding: 0.3rem 0;
+}
+
+/* .card__price {
+
+} */
