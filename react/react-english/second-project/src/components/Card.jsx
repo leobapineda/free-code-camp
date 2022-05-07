@@ -22,7 +22,7 @@ export default function Card({
       <div className="card__rating">
         <img
           className="card__star"
-          src={require(`../images/${starImg}.png`)}
+          src={require("../images/star.png")}
           alt={starImg}
         />
         <span>{rating}</span>
