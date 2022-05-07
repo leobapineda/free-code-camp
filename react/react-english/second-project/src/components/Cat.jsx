@@ -1,18 +1,18 @@
 import React from "react";
 
-export default function Cat(props) {
+export default function Cat({img, name, icon1, phone, email}){
   return (
     <div className="contacts">
       <div className="contact-card">
-        <img src={props.img} alt={props.name} />
-        <h3>{props.name}</h3>
+        <img src={img} alt={name} />
+        <h3>{name}</h3>
         <div className="info-group">
-          <img src={props.icon1} alt={props.name}/>
-          <span>{props.phone}</span>
+          <img src={icon1} alt={name}/>
+          <span>{phone}</span>
         </div>
         <div className="info-group">
-          <img src={props.icon1} alt={props.name}/>
-          <span>{props.email}</span>
+          <img src={icon1} alt={name}/>
+          <span>{email}</span>
         </div>
       </div>
     </div>
