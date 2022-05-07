@@ -19,6 +19,7 @@ console.log(openSpots);
 
   return (
     <div className="card__container">
+      {openSpots === 0 && <div className="card__badge" >SOLD OUT</div>}
       <img
         className="card__img"
         src={coverImg}

@@ -7,7 +7,6 @@ import Data from "./components/Data";
 
 function App() {
   let  dataElement  = Data.map((element) => {
-    // console.log(element);
     return (
       <Card
       key={element.id}
