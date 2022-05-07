@@ -4,18 +4,18 @@ import React from "react";
 import "../stylesheet/Card.css";
 
 export default function Card({
-  id,
-  title,
-  description,
-  price,
-  coverImg,
-  rating,
-  reviewCount,
-  location,
-  openSpots,
+  card: {
+    id,
+    title,
+    description,
+    price,
+    coverImg,
+    stats,
+    location,
+    openSpots,
+  },
 }) {
   let badgeText;
-
   if (openSpots === 0) {
     badgeText = "SOLD OUT";
   } else if (location === "Online") {
@@ -33,14 +33,14 @@ export default function Card({
           src={require("../images/star.png")}
           alt={"star img"}
         />
-        <span>{rating}</span>
+        <span>{stats.rating}</span>
         <span className="card__card__rating--gray">
           {" "}
-          {`(${reviewCount})`} - {location}
+          {`(${stats.reviewCount})`} - {location}
         </span>
         <div className="card__text">{title}</div>
         <div className="card__price">
-          <strong>From {`$${price}`}</strong> / person
+          <strong>From {price}</strong> / person
         </div>
       </div>
     </div>

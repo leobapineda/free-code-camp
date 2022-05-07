@@ -6,28 +6,17 @@ import Card from "./components/Card";
 import Data from "./components/Data";
 
 function App() {
-  let  dataElement  = Data.map((element) => {
-    return (
-      <Card
-      key={element.id}
-        title={element.title} 
-        id={element.id}
-        description={element.description}
-        price={element.price}
-        coverImg={element.coverImg}
-        rating = {element.stats.rating}
-        reviewCount = {element.stats.reviewCount}
-        location={element.location}
-        openSpots={element.openSpots}
-      />
-    );
+  let dataElement = Data.map((element) => {
+    return <Card
+    key={element.id} 
+    card={element} />;
   });
 
   return (
     <div className="main-container">
       <Navbar />
       <Wallpaper />
-      <div className="cards-container" >{dataElement}</div>
+      <div className="cards-container">{dataElement}</div>
     </div>
   );
 }
