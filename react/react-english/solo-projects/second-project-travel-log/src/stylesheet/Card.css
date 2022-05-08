@@ -19,6 +19,7 @@
 
 .card__icon {
   width: 10px;
+  opacity: 0.5;
 }
 
 .card__country {
