@@ -1,19 +1,9 @@
 import React from "react";
-
 //stylesheet
 import "../stylesheet/Card.css";
 
 export default function Card({
-  card: {
-    id,
-    title,
-    description,
-    price,
-    coverImg,
-    stats,
-    location,
-    openSpots,
-  },
+  card: { id, title, description, price, coverImg, stats, location, openSpots },
 }) {
   let badgeText;
   if (openSpots === 0) {

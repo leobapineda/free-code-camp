@@ -14,17 +14,16 @@
   border-radius: 0.1rem;
   padding: 0.1rem 0.5rem;
   font-weight: bold;
-  
 }
 
 .card__container .card__img {
- width: 250px;
- height: 350px;
+  width: 250px;
+  height: 350px;
 }
 
 img.card__star {
-    width: 15px;
-    margin: 0 0.2rem;
+  width: 15px;
+  margin: 0 0.2rem;
 }
 
 .card__rating {
@@ -32,10 +31,9 @@ img.card__star {
 }
 
 .card__card__rating--gray {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .card__text {
   padding: 0.3rem 0;
 }
-

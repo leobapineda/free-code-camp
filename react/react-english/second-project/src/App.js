@@ -1,15 +1,13 @@
 import React from "react";
-import "./App.css";
 import Navbar from "./components/Navbar";
 import Wallpaper from "./components/wallpaper";
 import Card from "./components/Card";
 import Data from "./components/Data";
+import "./App.css";
 
 function App() {
   let dataElement = Data.map((element) => {
-    return <Card
-    key={element.id} 
-    card={element} />;
+    return <Card key={element.id} card={element} />;
   });
 
   return (
