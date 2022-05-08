@@ -6,9 +6,7 @@ import Data from "./Data/Data";
 
 function App() {
   let CardInfo = Data.map((element) => {
-    return <Card 
-      key={element.id} 
-      CardElement={element} />;
+    return <Card key={element.id} CardElement={element} />;
   });
 
   return (
