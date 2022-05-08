@@ -12,15 +12,13 @@
   height: 245px;
   border-radius: 0.5rem;
   filter: grayscale(100%);
-  filter: opacity(0.8) drop-shadow(0 0 0 #64ffda); 
-  transition: filter 0.2s ease-in-out;
-  
+  filter: opacity(0.8) drop-shadow(0 0 0 #ff4f4f);
 
+  transition: filter 0.2s ease-in-out;
 }
 
 .card__img:hover {
-  filter: opacity(1) drop-shadow(0 0 0 #64ffda); 
-
+  filter: opacity(1) drop-shadow(0 0 0 #ff4f4f);
 }
 
 .card__info {
