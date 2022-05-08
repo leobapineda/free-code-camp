@@ -16,6 +16,7 @@
 .header__img {
   max-width: 40px;
   animation: rotation 15s infinite linear;
+  margin-right: 0.5rem;
 }
 
 @keyframes rotation {
