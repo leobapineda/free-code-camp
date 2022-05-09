@@ -4,13 +4,13 @@ import Meme from "./components/Meme";
 
 function App() {
   const array = ["thing1", "thing2"];
-  
+
   function createElement() {
     array.push(`thing${array.length + 1}`);
     console.log(array);
   }
 
-  arrayElement = array.map((item) => {
+  let arrayElement = array.map((item) => {
     return <p key={item}>{item}</p>;
   });
 
