@@ -5,22 +5,33 @@ import memeData from "./memeData";
 import "../stylesheet/Meme.css";
 
 export default function Meme() {
-  function getNewImg() {
-    const dataArray = memeData.data.memes;
-    let randomIndex = Math.floor(Math.random() * dataArray.length);
-    let dataLink = memeData.data.memes[randomIndex].url;
-    console.log(dataLink);
-    console.log(randomIndex);
-  }
+
+  let obj = useState(0)
+  console.log(obj);
+  const [num, setNum] = useState(0)
+
+function sumCount() {
+  setNum((prevNum)  => prevNum + 1)
+}
+
+function substractCount() {
+  setNum((prevNum) => prevNum - 1)
+}
 
   return (
     <main className="meme__container">
+      <h1>{num}</h1>
       <div className="form">
         <input className="meme__firstInput" type="text" />
         <input className="meme__secondInput" type="text" />
-        <button className="meme__button" onClick={getNewImg}>
-          Get a new meme 😆
+        <button className="meme__button" onClick={sumCount}>
+          Get a new meme 1😆
         </button>
+        <button className="meme__button" onClick={substractCount}>
+        Get a new meme 2😆
+
+        </button>
+
       </div>
       <div className="meme__img-container">
         <img
