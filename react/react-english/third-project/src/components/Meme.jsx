@@ -1,6 +1,5 @@
 import { React, useState } from "react";
 import memeData from "./memeData";
-
 // atylesheet
 import "../stylesheet/Meme.css";
 
