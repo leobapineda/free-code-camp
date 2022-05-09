@@ -5,14 +5,16 @@ export default function Meme() {
   return (
     <main className="meme__container">
       <form action="">
-        <div className="meme__input-container" >
-        <input className="firstInput" type="text" />
-        <input type="text" />
-        </div>
-        <div>
-          <button>Get a new meme 😆</button>
-        </div>
+        <input className="meme__firstInput" type="text" />
+        <input className="meme__secondInput" type="text" />
+        <button className="meme__button">Get a new meme 😆</button>
       </form>
     </main>
   );
 }
+
+
+
+
+
+
