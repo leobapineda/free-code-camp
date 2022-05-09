@@ -16,24 +16,32 @@ function App() {
   //     <p key={item} >{item}</p>
   //   )
   // })
+  const [itemArray, setItemArray] = useState(['I1'])
 
-let [thingsArray, setThingsArray] = useState(['t1', 't2'])
+  let parraforItem = itemArray.map((item) => {
+    return(
+      <p key={item} >{item}</p>
+    )
+  })
 
-let arrayMap = thingsArray.map(item => {
-  return(
-    <p key={item} >{item}</p>
-  )
-})
+  function addItem() {
+    setItemArray((prevItemArray) => [...prevItemArray, `I${prevItemArray.length + 1}`])
+  }
 
   return (
+
+
+
+
     <div className="App">
       <Header />
       <Meme />
       {/* <h1>{out ? "yes" : "no"}</h1>
       <button onClick={handleClick}>click me</button> */}
-      <div>{arrayMap}</div>
+      <button onClick={addItem} > Add item</button>
+      <div>{parraforItem}</div>
     </div>
   );
 }
 
-export default App; 
+export default App;
