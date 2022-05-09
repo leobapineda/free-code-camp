@@ -3,7 +3,7 @@
   /* height: 100vh; */
 }
 
-form {
+.form {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-auto-rows: auto;
@@ -14,7 +14,7 @@ form {
   grid-column: span 2;
 }
 
-form > * {
+.form > * {
   background: none;
   border: 1px solid #64ffda;
   color: white;
@@ -28,4 +28,3 @@ form > * {
   cursor: pointer;
   background-color: #64ffdb30;
 }
-
