@@ -1,14 +1,24 @@
-import { React, useState } from "react";
-import Header from "./Header";
-import Body from "./Body";
+import React from "react"
+import boxes from "./components/Boxes"
+import './App.css'
 
-export default function App(props) {
-  const [user, setUser] = useState("Leo");
+export default function App() {
 
-  return (
-    <main>
-      <Header name={user} />
-      <Body name={user} />
-    </main>
-  );
+  const [box, setBox] = [boxes]
+
+  const boxElements = box.map( ({id, on}) => (
+      <div className="box" key={id} ></div>
+    )
+  )
+    
+
+
+    return (
+        <main>
+            <h1>Boxes will go here</h1>
+            {boxElements}
+        </main>
+    )
 }
+
+//es un array de objetos
