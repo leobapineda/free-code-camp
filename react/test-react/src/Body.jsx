@@ -1,9 +1,9 @@
-import React from "react"
+import React from "react";
 
-export default function Body({userBody}) {
-    return (
-        <section>
-            <h1>Welcome back, {userBody}!</h1>
-        </section>
-    )
+export default function Body({ name }) {
+  return (
+    <section>
+      <h1>Welcome back, {name}!</h1>
+    </section>
+  );
 }

@@ -1,15 +1,9 @@
-import {React, useState} from "react"
+import { React } from "react";
 
-export default function Header() {
-    let [user, setUser] = useState("Leo")
-    
-   function func() {
-    setUser(user = 'Pineda')
-   }
-
-    return (
-        <header onClick={func} >
-            <p>Current user: {user}</p>
-        </header>
-    )
+export default function Header({ name }) {
+  return (
+    <header>
+      <p>Current user: {name}</p>
+    </header>
+  );
 }
