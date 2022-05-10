@@ -6,8 +6,17 @@ import Box from "./components/Box";
 export default function App({ darkMode }) {
   const [box, setBox] = useState(boxesData);
 
+  function toggle(id) {
+    console.log(id);
+  }
+
   const boxElements = box.map((boxItem) => {
-    return <Box key={boxItem.id} on={boxItem.on} id={boxItem.id} />;
+    return <Box 
+    key={boxItem.id} 
+    on={boxItem.on} 
+    id={boxItem.id} 
+    handleClick = {toggle}
+    />;
   });
 
   return (
