@@ -1,20 +1,29 @@
 import React from "react"
 import boxes from "./components/Boxes"
 import './App.css'
+import Box from "./components/Box"
 
-export default function App() {
+export default function App({darkMode}) {
+
+
 
   const [box, setBox] = [boxes]
 
+  
+
   const boxElements = box.map( ({id, on}) => (
-      <div className="box" key={id} ></div>
+    <Box 
+    key={id}
+    on = {on}
+    id = {id}
+    />
     )
   )
     
 
 
     return (
-        <main>
+        <main >
             <h1>Boxes will go here</h1>
             {boxElements}
         </main>
