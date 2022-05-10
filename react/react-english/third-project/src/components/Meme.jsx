@@ -8,7 +8,7 @@ export default function Meme() {
   const [meme, setMeme] = useState({
     topText: '',
     bottomText: '',
-    randomImage: 'https://i.imgflip.com/30b1gx.jpg',
+    randomImage: 'https://i.imgflip.com/28j0te.jpg',
   });
 
   const [allMemeImages, setallMemeImages] = useState(memeData);
@@ -16,13 +16,13 @@ export default function Meme() {
   function getMemeImage() {
     const memesArray = allMemeImages.data.memes
     const randomNumber = Math.floor(Math.random() * memesArray.length)
-    let memeImg = memesArray[randomNumber].url
+    let memeUrl = memesArray[randomNumber].url
     
     setMeme((prevMeme) => {
       return(
         {
           ...prevMeme,
-          randomImage : memeImg
+          randomImage : memeUrl
         }
       )
     })
@@ -34,12 +34,12 @@ export default function Meme() {
         <input
           className="meme__firstInput"
           type="text"
-          placeholder={''}
+          placeholder={'Top Text'}
         />
         <input
           className="meme__secondInput"
           type="text"
-          placeholder={''}
+          placeholder={'Bottom Text'}
         />
         <button className="meme__button" onClick={getMemeImage}>
           Get a new meme 1 😆
