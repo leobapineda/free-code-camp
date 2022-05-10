@@ -4,7 +4,7 @@ import memeData from "./memeData";
 import "../stylesheet/Meme.css";
 
 export default function Meme() {
-  const [img, setImg] = useState("");
+  const [img, setImg] = useState("https://i.imgflip.com/30b1gx.jpg");
 
   function generateUrl() {
     const memesArray = memeData.data.memes;
@@ -23,7 +23,7 @@ export default function Meme() {
         </button>
       </div>
       <div className="meme__img-container">
-        <img className="meme__img" src={img} alt="" />
+        <img className="meme__img" src={img} alt="meme img" />
       </div>
     </main>
   );
