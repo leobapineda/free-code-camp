@@ -25,10 +25,12 @@
   border-radius: 0.2rem;
 }
 
-.meme__button:hover,
-.meme__button:focus {
-  cursor: pointer;
+.meme__button {
   background-color: #64ffdb30;
+}
+.meme__button:hover {
+  background-color: #64ffdb70;
+  cursor: pointer;
 }
 
 .meme__img-container {
@@ -37,7 +39,7 @@
 }
 
 .meme__img {
-  width: 100%;
+  width: 40%;
   display: block;
   margin: 0 auto;
 }
