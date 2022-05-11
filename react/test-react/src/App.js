@@ -12,7 +12,7 @@ export default function App({ darkMode }) {
     console.log(newbox.on);
     // ya tenemos el array, ahora lo podemos usar 
     setBox((box) => {
-      console.log(box);
+      console.log(box); 
       return(
         [...box]
       )
