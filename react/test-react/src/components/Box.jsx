@@ -5,7 +5,7 @@ export default function Box({ on, id, handleClick }) {
   
 
   const personalStyles = {
-    backgroundColor: on ? "#222222" : "#cccccc",
+    backgroundColor: on ? "#222222" : "#ffffff",
   };
 
   return (

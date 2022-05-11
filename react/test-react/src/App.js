@@ -7,7 +7,16 @@ export default function App({ darkMode }) {
   const [box, setBox] = useState(boxesData);
 
   function toggle(id) {
-    console.log(id);
+    let newbox = box.find((box) => box.id == id)
+    newbox.on = !newbox.on
+    console.log(newbox.on);
+    // ya tenemos el array, ahora lo podemos usar 
+    setBox((box) => {
+      console.log(box);
+      return(
+        [...box]
+      )
+    })
   }
 
   const boxElements = box.map((boxItem) => {
